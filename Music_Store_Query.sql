@@ -21,7 +21,7 @@ ORDER BY c DESC
 SELECT total 
 FROM invoice
 ORDER BY total DESC
-limit 3	
+LIMIT 3	
 
 
 /* Q4: Which city has the best customers? We would like to throw a promotional Music Festival in the city we made the most money. 
@@ -154,5 +154,6 @@ WITH Customter_with_country AS (
 		GROUP BY 1,2,3,4
 		ORDER BY 4 ASC,5 DESC)
 SELECT * FROM Customter_with_country WHERE RowNo <= 1
+
 
 
